@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neural Style Transfer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>Neural Style Transfer</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file1"><h2>Content Image:</h2></label>
+        <input type="file" name="file1" id="file1" accept="image/*" required>
+        <br>
+        <label for="file2"><h2>Style Image:</h2></label>
+        <input type="file" name="file2" id="file2" accept="image/*" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    
+    <div style="align-items: center;">
+
+    {% if image %}
+    <img src="{{ url_for('static', filename='images/' + content) }}" alt="Uploaded Image">
+
+    <img src="{{ url_for('static', filename='images/' + style) }}" alt="Uploaded Image">
+
+    <img src="{{ url_for('static', filename='output/' + image) }}" alt="Uploaded Image">
+    {% endif %}
+    </div>
+</body>
+</html>
