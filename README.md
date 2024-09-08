@@ -1,5 +1,9 @@
 # Neural Style Transfer with Flask
 
+![image](https://github.com/user-attachments/assets/4354c3ac-6360-48de-a740-e21fc9067eb3)
+
+![image](https://github.com/user-attachments/assets/c3628826-016c-4dfe-b44c-ad01096c8b99)
+
 This project demonstrates a neural style transfer application using TensorFlow and Flask. The application allows users to upload content and style images and produces a stylized image that combines the content of the content image with the style of the style image.
 
 ## Prerequisites
@@ -17,8 +21,8 @@ This project demonstrates a neural style transfer application using TensorFlow a
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/koushik2k3/Neural-Style-Transfer.git
+   cd Neural-Style-Transfer
    ```
 
 2. **Create and Activate a Virtual Environment**
@@ -55,27 +59,9 @@ This project demonstrates a neural style transfer application using TensorFlow a
    - The processed stylized image will be displayed on the page.
    - The stylized image will also be saved to the `static/output` directory.
 
-## Code Overview
-
-- **`crop_center(image)`**: Crops an image to a square shape from the center.
-- **`load_image(image_path, image_size=(256, 256), preserve_aspect_ratio=True)`**: Loads and preprocesses images from a file path.
-- **`hub_module`**: TensorFlow Hub module for arbitrary image stylization.
-- **`project()`**: Flask route that handles image upload and style transfer.
-
 ## Project Structure
 
 - `app.py`: Main Flask application script.
 - `templates/`: Contains the HTML templates.
 - `static/`: Contains static files including uploaded images and output images.
 
-## Contributing
-
-Feel free to open issues or submit pull requests to improve the project.
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-Replace `<repository-url>` and `<repository-directory>` with the actual URL and directory name of your repository. Let me know if there are any specific details you'd like to include!
