@@ -6,7 +6,7 @@ from lib import *
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secretkey'
 
-# Set the path for image uploads
+
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
